@@ -1,0 +1,18 @@
+1. Liste os quatro estados do formulário (formulario, erros, tocados, status) e, em uma linha cada, a responsabilidade de cada um. 
+Em qual estado devem ficar as mensagens de erro? Por que elas não devem ser misturadas aos demais?
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Os Quatro Estados do Formulário:
+
+formulario: Guarda os valores brutos digitados ou selecionados nos inputs.
+
+erros: Armazena as strings com mensagens de feedback para validações falhas.
+
+tocados: Registra valores booleanos indicando quais campos o usuário já visitou/desfocou.
+
+status: Controla o fluxo de execução global da tela ("editando", "enviando", "sucesso").
+
+Onde ficam as mensagens? No estado erros. Eles não devem ser misturados para manter o princípio de responsabilidade única; 
+juntar dados de preenchimento com mensagens de falha tornaria o rastreamento de bugs complexo e causaria re-renderizações 
+desnecessárias em cascata.

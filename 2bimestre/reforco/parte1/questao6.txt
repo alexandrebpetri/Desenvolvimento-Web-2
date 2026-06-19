@@ -1,0 +1,11 @@
+6. No handleChange melhorado, por que montamos formularioAtualizado à mão antes de setFormulario, 
+em vez de validar formulario na linha seguinte? Considere que setFormulario agenda uma nova renderização, 
+mas a variável formulario mantém o valor da renderização atual enquanto o evento está sendo tratado.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+A função setFormulario não atualiza a variável formulario de forma síncrona instantânea; 
+ela agenda uma re-renderização para o próximo ciclo do React.
+
+Se validássemos a variável formulario diretamente na linha de baixo, leríamos o valor antigo 
+(snapshot da renderização atual), deixando a validação atrasada em exatamente 1 caractere.

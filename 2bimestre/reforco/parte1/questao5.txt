@@ -1,0 +1,11 @@
+5. Cite as três estratégias possíveis de "quando mostrar o erro". Qual o roteiro adota e por quê? 
+Qual o papel de tocados e do onBlur nessa escolha?
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+As três estratégias são: No Envio (Submit), Tempo Real (OnChange) e Pós-Foco (OnBlur).
+
+Estratégia adotada: O roteiro usa uma estratégia híbrida. Exibe os erros no Submit ou no OnBlur, 
+mas permite correções em tempo real no OnChange apenas se o campo já foi tocado. 
+Isso evita frustrar o usuário com mensagens de erro pulando na tela enquanto ele ainda está digitando pela primeira vez. 
+onBlur detecta a saída do foco e atualiza o estado tocados para autorizar esse comportamento.

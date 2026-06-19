@@ -1,0 +1,12 @@
+8. O que o atributo noValidate desliga no <form>? 
+Cite uma responsabilidade que continua sendo do nosso código mesmo com noValidate.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Atributo noValidate
+
+Ele desliga a validação nativa do navegador (aqueles balões automáticos de campos requeridos e bloqueios de e-mail 
+inválido ao clicar em enviar).
+
+Responsabilidade remanescente: Nossa aplicação continua 100% responsável por interceptar o recarregamento com 
+event.preventDefault(), rodar as funções de validação manuais, atualizar estados de erro e renderizar as mensagens na interface.

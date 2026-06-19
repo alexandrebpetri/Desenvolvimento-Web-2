@@ -1,0 +1,9 @@
+4. A regra da idade começa com valores.idade === "". Por que essa checagem vem antes de comparar números? 
+(Dica: quanto vale Number("")?)
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+No JavaScript, converter uma string vazia em número resulta em zero: Number("") // 0.
+
+Se a comparação idade < 14 rodasse direto em um campo em branco, o JS interpretaria o valor como 0. 
+O formulário acusaria o erro de "idade menor que 14" em vez de acusar o erro correto de "campo obrigatório ou em branco".

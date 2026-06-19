@@ -1,0 +1,11 @@
+7. Por que "validação no cliente não substitui validação no servidor"? 
+Dê um exemplo de como alguém burlaria a validação manual do navegador.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+A validação no cliente serve para melhorar a experiência do usuário (UX) e economizar requisições inúteis. 
+No entanto, ela é insegura e facilmente burlável.
+
+Exemplo de burla: Qualquer usuário pode abrir o painel do desenvolvedor (F12), remover o atributo noValidate 
+ou o JavaScript da página, ou simplesmente simular o envio usando ferramentas externas como Postman, 
+Insomnia ou comandos cURL no terminal direto contra a URL do servidor.

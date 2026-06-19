@@ -1,0 +1,10 @@
+3. No handleChange genérico, por que precisamos de type === "checkbox" ? checked : value? 
+O que o checkbox guardaria sem essa decisão?
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Precisamos do teste type === "checkbox" porque elementos de marcação guardam seu estado na propriedade nativa checked 
+(um booleano true/false).
+
+Sem essa decisão: O checkbox enviaria a propriedade value padrão do HTML, que armazena a string fixa "on", 
+impossibilitando saber se ele foi desmarcado.

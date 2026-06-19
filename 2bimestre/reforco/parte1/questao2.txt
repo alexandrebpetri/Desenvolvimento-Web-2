@@ -1,0 +1,11 @@
+2. Qual a diferença entre validar e normalizar? Quais são as duas partes do objeto que validarFormulario devolve?
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Validar: É aplicar regras de negócio para julgar se a informação atende aos critérios obrigatórios 
+(Ex: se tem @, se tem tamanho mínimo).
+
+Normalizar: É tratar, limpar e transformar os dados brutos já aceitos (Ex: aplicar .trim(), .toLowerCase(), 
+converter strings para Number) antes do envio definitivo.
+
+Retorno da função: Retorna um objeto contendo duas chaves principais: { erros, dados }.
