@@ -1,0 +1,89 @@
+:root {
+  font-family: Inter, system-ui, sans-serif;
+  color: #e8eef8;
+  background: #101827;
+}
+
+body {
+  margin: 0;
+}
+
+.cabecalho {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  background: #172033;
+}
+
+.cabecalho a {
+  color: #cbd5e1;
+  text-decoration: none;
+}
+
+.cabecalho nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.cabecalho a.ativo {
+  color: #fbbf24;
+  font-weight: 700;
+}
+
+.marca {
+  font-weight: 800;
+}
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.lista-filmes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 1rem;
+}
+
+.cartao-filme {
+  padding: 1.25rem;
+  border: 1px solid #334155;
+  border-radius: 0.75rem;
+  background: #172033;
+}
+
+.cartao-filme h2 {
+  margin-top: 0;
+}
+
+.capa {
+  margin: 0 0 0.75rem;
+  font-size: 3rem;
+}
+
+.cartao-filme a,
+.detalhe-filme a {
+  color: #fbbf24;
+}
+
+.link-genero {
+  color: #94a3b8 !important;
+  text-decoration: underline;
+}
+
+button {
+  background: #334155;
+  color: #f8fafc;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+button:hover {
+  background: #475569;
+}
